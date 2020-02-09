@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                         String data = new Asyncdata().execute(currency_data).get();
                         JSONObject mainObj = new JSONObject(data);
                         JSONObject currdat = mainObj.getJSONObject("rates");
-                        eur = currdat.getString("RUB");
+                        eur = currdat.getString("HKD");
                         aud = currdat.getString("AUD");
                         chf = currdat.getString("CHF");
                         cny = currdat.getString("CNY");
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    trail.setText("Base EUR \nEUR : 1\nRUB : " + eur + "\nCAD : " + cad + "\nINR : " + inr + "\nUSD : " + usd + "\nAUD : " + aud + "\nCHF : " + chf + "\nCNY : " + cny + "\nGBP : " + gbp);
+                    trail.setText("Base EUR \nEUR : 1\nHKD : " + eur + "\nCAD : " + cad + "\nINR : " + inr + "\nUSD : " + usd + "\nAUD : " + aud + "\nCHF : " + chf + "\nCNY : " + cny + "\nGBP : " + gbp);
                 }
                     else {
                         Toast.makeText(getApplicationContext(),"Please enter valid date",Toast.LENGTH_LONG).show();

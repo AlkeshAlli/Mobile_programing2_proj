@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".One_to_many"></activity>
         <activity android:name=".Converter" />
         <activity android:name=".Menu" />
         <activity android:name=".Splashit">
